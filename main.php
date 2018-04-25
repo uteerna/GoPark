@@ -86,7 +86,7 @@
         <tr>
           <th scope="col">Name</th>
           <th scope="col">Address</th>
-          <th scope="col" style ="text-align:center;">Parking Space</th>
+          <th scope="col" style ="text-align:center;">Total Parking Space</th>
           <th scope="col" style ="text-align:center;"">Available Space</th>
         </tr>
       </thead><tbody>';

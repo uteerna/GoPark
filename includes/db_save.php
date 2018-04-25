@@ -16,9 +16,10 @@ $park_total = mysqli_real_escape_string($link, $_REQUEST['park_total']);
 // attempt insert query execution
 $sql = "INSERT INTO parking (park_name, park_address, park_total) VALUES ('$park_name', '$park_address', '$park_total')";
 if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
+    // echo "Records added successfully.";
+    header("location: RecordAdd.php");
 } else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+    echo "ERROR: Could not execute $sql. " . mysqli_error($link);
 }
  
 // close connection

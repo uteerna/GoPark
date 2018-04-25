@@ -19,4 +19,5 @@
     e_time, reg_no, price) VALUES ($cust_id,$park_id,$s_time,$e_time,'$reg_no',$price)";
     $result = mysqli_query($conn,$sql);
   
-        header("location: ../index.php?success=booking confirmed");
+        header("location: ../index.php?msg=booking confirmed");
+        

@@ -79,6 +79,8 @@
                 <div class="col-3">
                 <input class="form-control" type="time"  id="start" name="s_time" readonly require> 
                 </div> 
+            </div>
+            <div class="form-group row">
                 <label  class="col-sm-2 col-form-label">End Time</label>
                 <div class="col-3">
                 <input class="form-control" type="time"  id="end" name="e_time" readonly require> 

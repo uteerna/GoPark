@@ -16,7 +16,8 @@ $park_id = mysqli_real_escape_string($link, $_REQUEST['park_id']);
 // attempt insert query execution
 $sql = "DELETE FROM parking where park_id = $park_id";
 if(mysqli_query($link, $sql)){
-    echo "Records deleted successfully.";
+    // echo "Records deleted successfully.";
+    header("location: RecordDelete.php");
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }

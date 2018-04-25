@@ -6,7 +6,7 @@
         <div>
             <h3> <a class = "navs hompagebody" href = "html/AboutUs.html"> About Us </a>
             <a class = "navs1 hompagebody" href = "html/ContactUs.html"> Contact Us </a> </h3>
-            <img src = "resource/img/parkoffice.jpg" width="1250" height="300" alt="">
+            <img src = "resource/img/parkoffice.jpg" width="100%" height="300" alt="">
         </div>
         <div class="container-fluid hompagebody" id="reg" >
             <div class="row">
@@ -39,7 +39,7 @@
                                 <input type="password" id = "confirmpassword" class="form-control" name="confirmPassword" placeholder="Confirm Password" required>
                             </div>
                         </div>
-                        <button type="submit" id = "btnSubmit" name="submit" class="btn btn-primary btn-lg btn-block" value = "Submit" >Submit</button>
+                        <button type="submit" id = "btnSubmit" name="submit" class="btn btn-primary btn-lg btn-block" value = "Submit">Submit</button>
                     </form>
                     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
                     <script type="text/javascript">

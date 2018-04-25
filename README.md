@@ -1,2 +1,2 @@
 # GoPark
-A website for parking management at Indiana University
+A web application to help users to book parking space

@@ -1,3 +1,6 @@
+<!DOCTYPE HTML>  
+<html>
+<body>  
 <?php
 #check if the button has been clicked
 if(isset($_POST['submit'])){
@@ -8,7 +11,6 @@ if(isset($_POST['submit'])){
     $email = mysqli_real_escape_string($conn,$_POST['regEmail']);
     $phone = mysqli_real_escape_string($conn,$_POST['phone']);
     $pwd = mysqli_real_escape_string($conn,$_POST['password']); 
-
     //error handles
     //check for empy field
     if(empty($first) || empty($last) || empty($email) || empty($phone) || empty($pwd)){
@@ -42,10 +44,10 @@ if(isset($_POST['submit'])){
                     $resultCheck = mysqli_num_rows($result);
                     if($resultCheck != 1)
                     {
-                      header("location: ../index.php?signup=dbfail");
+                      header("location: ThankYou.php");
                       exit();
                     }else{
-                      header("location: ../index.php?signup=success");
+                      header("location: ThankYou.php");
                       exit();
                     }
                 }
@@ -53,7 +55,10 @@ if(isset($_POST['submit'])){
         }
     }
 }else{
-    #if user directly enter th php take them back to index
+    #if user directly enter the php take them back to index
     header("location: ../index.php");
     exit();
 }
+?>
+</body>
+</html>
