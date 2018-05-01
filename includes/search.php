@@ -5,7 +5,7 @@ if($_GET['start'] && $_GET['end']){
     $start = $_GET['start'];
     $end = $_GET['end'];
     
-    $sql = "SELECT park_id,COUNT(park_id) as count FROM booking WHERE (s_time > $start AND e_time < $end) OR (s_time < $end AND e_time > $end) OR (s_time < $start AND e_time > $start) group by park_id ";
+    $sql = "SELECT park_id,COUNT(park_id) as count FROM booking WHERE (s_time >= $start AND e_time <= $end) OR (s_time <= $end AND e_time >= $end) OR (s_time <= $start AND e_time >= $start) group by park_id ";
     $result = mysqli_query($conn,$sql);
         
     $resultCheck = mysqli_affected_rows($conn);
